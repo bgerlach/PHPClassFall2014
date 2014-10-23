@@ -1,0 +1,24 @@
+
+<?php
+// Get the category data
+var_dump($_POST);
+$categoryName = $_POST['categoryName'];
+
+
+// Validate inputs
+if (empty($categoryName)) {
+    $error = "Invalid category data. Check all fields and try again.";
+    include('error.php');
+} else {
+    // If valid, add the category to the database
+    require_once('database.php');
+    $query = "INSERT INTO categories
+                 (categoryName)
+              VALUES
+                 ('$categoryName')";
+    $db->exec($query);
+
+    // Display the category List page
+    include('index.php');
+}
+?>
