@@ -1,7 +1,7 @@
 <?php
     // get the data from the form
     //Exercise 1: Deleted semi colon in the below line
-    $product_description = $_POST['product_description']
+    $product_description = $_POST['product_description'];
     $list_price = $_POST['list_price'];
     $discount_percent = $_POST['discount_percent'];
     
