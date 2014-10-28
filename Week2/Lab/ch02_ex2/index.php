@@ -17,9 +17,9 @@
 
         
         
-        $investment = rand();
-        $interest_rate = rand(0, 15);
-        $years = rand(0, 50);
+        if (empty($investment)){$investment = rand();}
+        if (empty($interest_rate)){$interest_rate = rand(0, 15);}
+        if (empty($years)){$years = rand(0, 50);}
         
         ?>
         

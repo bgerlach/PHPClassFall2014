@@ -75,7 +75,10 @@
         <label>Future Value:</label>
         <span><?php echo $future_value_f; ?></span><br />
         
+        <p><a href="index.php">Index Page</a></p>
     </div>
+    
+
 </body>
     <footer> <p> This calculation was done on <?php echo $date = date('m/d/Y H:i:s'); ?> </p></footer>
 </html>
