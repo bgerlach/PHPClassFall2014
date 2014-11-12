@@ -11,7 +11,7 @@
     $contact_via = $_POST['contact_via'];
     $comments = $_POST['comments'];
     $comments = htmlspecialchars($comments, ENT_COMPAT, 'ISO-8859-1', false);
-    $comments = n12br($comment, false);
+
 
     // get the rest of the data for the form
 
