@@ -12,6 +12,7 @@ if (isset($_POST['tasklist'])) {
 
 $errors = array();
 
+
 switch( $_POST['action'] ) {
     case 'Add Task':
         $new_task = $_POST['newtask'];
