@@ -62,8 +62,8 @@ function valid_password($password)
 
 
 
-var_dump(check_login('test2@test.com','test32'));
-var_dump(check_email('test2@tsdfest.com'));
-var_dump(valid_email('test@test.com'));
-var_dump(valid_password('te'))
+//var_dump(check_login('test2@test.com','test32'));
+//var_dump(check_email('test2@tsdfest.com'));
+//var_dump(valid_email('test@test.com'));
+//var_dump(valid_password('te'))
 ?>

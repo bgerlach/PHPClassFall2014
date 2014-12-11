@@ -11,7 +11,11 @@ and open the template in the editor.
     </head>
     <body>
         
-    <?php if (count($errors) > 0) : ?>
+    <?php 
+
+    include_once 'Header.php';
+    
+    if (isset($errors)&& count($errors)> 0) : ?>
         <h2>Errors:</h2>
         <ul>
         <?php foreach($errors as $error) : ?>
@@ -29,8 +33,8 @@ and open the template in the editor.
 
 
         <div id="main">
-            <h1>Add User</h1>
-            <form action="index.php" method="post"
+            <h1>Login</h1>
+            <form action="login_code.php" method="post"
                   >
 
                 </select>
@@ -47,7 +51,7 @@ and open the template in the editor.
                 
 
                 <label>&nbsp;</label>
-                <input type="submit" value="AddUser" />
+                <input type="submit" value="Login" />
                 <br />
             </form>
             
@@ -57,3 +61,4 @@ and open the template in the editor.
 
 </body>
 </html>
+

@@ -7,16 +7,25 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Admin Page</title>
     </head>
     <body>
-        <?php
         
-                
-        include ('header.php');
+        <?php
 
-
+        include './Header.php';
+        
+        if ($_SESSION['loggedin'] != true)
+        {
+           header('Location: login.php');
+        }    
         ?>
         
+        
+        
+        <h1> Admin Page </h1>
+        
+
+            
     </body>
 </html>
