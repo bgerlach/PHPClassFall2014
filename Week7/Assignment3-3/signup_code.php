@@ -7,15 +7,18 @@ $password = filter_input(INPUT_POST, 'password');
 $errors = array();
 
 
-include ('Functions.php');
+//include ('Functions.php');
+include './FunctionsClass.php';
+
+$functions = new FunctionsClass();
 
 
-if (valid_email($email)== false){
+if ($functions->valid_email($email)== false){
     
     $errors[] = "Invalid email.  Please enter a valid email";
 } 
 
-if (valid_password($password)== false){
+if ($functions->valid_password($password)== false){
     
 
     $errors[] = "Invalid password.  Please enter a valid password over 4 characters in length";

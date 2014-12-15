@@ -5,16 +5,19 @@ $email = filter_input(INPUT_POST, 'email');
 $password = filter_input(INPUT_POST, 'password');
 $errors = array();
 
-include('Functions.php');
+//include('Functions.php');
+include './FunctionsClass.php';
 
 session_start();
 
-if (check_email($email)== false)
+$functions = new FunctionsClass();
+
+if ($functions->check_email($email)== false)
 {
    $errors[] = "Invalid Email.  Email not found.";
 }
 
-if (check_login($email, $password)== true)
+if ($functions->check_login($email, $password)== true)
 {
     $_SESSION['loggedin']=true;
 
