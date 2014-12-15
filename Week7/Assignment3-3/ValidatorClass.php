@@ -11,7 +11,7 @@
  *
  * @author Brendan
  */
-class FunctionsClass {
+class ValidatorClass {
     
 function check_login($email, $password)
 {

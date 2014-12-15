@@ -8,9 +8,9 @@ $errors = array();
 
 
 //include ('Functions.php');
-include './FunctionsClass.php';
+include './ValidatorClass.php';
 
-$functions = new FunctionsClass();
+$functions = new ValidatorClass();
 
 
 if ($functions->valid_email($email)== false){

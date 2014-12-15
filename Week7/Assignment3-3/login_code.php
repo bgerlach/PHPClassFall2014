@@ -6,11 +6,11 @@ $password = filter_input(INPUT_POST, 'password');
 $errors = array();
 
 //include('Functions.php');
-include './FunctionsClass.php';
+include './ValidatorClass.php';
 
 session_start();
 
-$functions = new FunctionsClass();
+$functions = new ValidatorClass();
 
 if ($functions->check_email($email)== false)
 {
