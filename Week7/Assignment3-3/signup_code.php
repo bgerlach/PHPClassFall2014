@@ -22,7 +22,12 @@ if ($functions->valid_password($password)== false){
     
 
     $errors[] = "Invalid password.  Please enter a valid password over 4 characters in length";
-}   
+}
+
+if ($functions->check_email($email)== true)
+{
+   $errors[] = "Email already exists.  Please use different email or select login.";
+}
 
 if (isset($email)&& count($errors)== 0){
         // If valid, add the email and password to the database
