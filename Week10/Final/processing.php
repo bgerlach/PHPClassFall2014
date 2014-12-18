@@ -10,6 +10,8 @@
 <h1>Account Information</h1>
 <label>Email Address:</label>
     <span><?php echo htmlspecialchars($email); ?></span><br />
+ <label>Phone Number:</label>
+ <span><?php echo htmlspecialchars($phone); ?></span><br />
 <label>Heard From:</label>
     <span><?php echo htmlspecialchars($heard_from); ?></span><br />
 <label>Contact Via:</label>
