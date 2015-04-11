@@ -1,12 +1,10 @@
 <?php
-function check_login($email, $password)
+function check_exist($email)
 {
-    $password = sha1($password);
     
     $db = new PDO("mysql:host=localhost;dbname=phpclassfall2014", "root", "");
-    $dbs = $db->prepare('SELECT * FROM signup WHERE email = :email AND password = :password');
+    $dbs = $db->prepare('SELECT * FROM signup WHERE email = :email');
     $dbs->bindParam(':email', $email, PDO::PARAM_STR);
-    $dbs->bindParam(':password', $password, PDO::PARAM_STR);
 
 
 

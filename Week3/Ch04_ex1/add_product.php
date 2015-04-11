@@ -11,7 +11,10 @@ if (empty($code) || empty($name) || empty($price) ) {
     include('error.php');
 } else {
     // If valid, add the product to the database
+    
+    
     require_once('database.php');
+    
     $query = "INSERT INTO products
                  (categoryID, productCode, productName, listPrice)
               VALUES

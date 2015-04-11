@@ -29,7 +29,7 @@ $zip = filter_input(INPUT_GET, 'zip');
                   >
 
                 
-                <?php foreach ($user as $user) : ?>
+                <?php foreach ($users as $user) : ?>
                     <option value="<?php echo $user['id']; ?>">
                         <?php echo $user['fullname']; ?>
                     </option>
